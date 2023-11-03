@@ -36,6 +36,19 @@ html{
   margin-right: 20px; /* Add spacing between links */
 }
 
+.links a:hover{
+  text-decoration: underline;
+}
+
+.hover-underline {
+  color: #486A61; 
+  text-decoration: none;
+}
+
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
 .profile-container {
   margin-left: 100px;
   margin-top: 50px;
