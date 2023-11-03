@@ -1,54 +1,155 @@
 <!DOCTYPE html>
-
+<html>
 <head>
   <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Olivia's Website</title>
-
-  <link href="dog.png" rel="icon">
-  <link href="assets/css/style.css" rel="stylesheet">
-
+  <link rel="icon" href="dog.png">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
-
 <body>
-          <div>
-            <h1>Olivia Lam</h1>
-            <p style="display: flex"> Hello! I'm Olivia and I am a Computational Intelligence/Design student at the University of British Columbia. My current interests
-                lie in UX/UI design studies, with a focus on human-centered design. Here are some of the projects I've done:</p>
-          </div>
+  <div class="navbar">
+    <div class="brand">Olivia Lam</div>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/olivia-lam-b77354193/">LinkedIn</a>
+      <a href="https://www.youtube.com/channel/UCqU9DX8UAWD0-FT8qiIxsJQ">YouTube</a>
+      <a href="mailto:olivia.lam@alumni.ubc.ca">Email</a>
+    </div>
+  </div>
 
-          <div class="container">
-            <div class="box">
-                <img src="assets/img/tenseconds1.png"></img>
-                <img src="assets/img/tenseconds2.png"></img>
-                <img src="assets/img/tenseconds3.png"></img>
-            </div>
-            <p>10seconds is a social media app for sharing 10 seconds of a user's life per day. Followers can leave voice message comments at certain timestamps.
-            <br> Stage: Med-Fi Prototype
-            </p>
-            <div class="box">
-                <img class="tpimg" src="assets/img/TP1.png"></img>
-            </div>
-            <div class="box">
-                <img class="tpimg" src="assets/img/TP2.png"></img>
-            </div>
-            <p>TargetProfiler is a website for biologists aimed at collating genetic data.
-            <br> Stage: Fully functioning webiste
-            </p>
+  <div class="profile-container">
+    <div class="profile-picture">
+      <img src="pfp2.png" alt="Profile Picture">
+    </div>
+    <div class="about-me">
+      <h2>About Me</h2>
+      <p style='line-height:1.5'>
+        Hello there! I am a UBC 2023 graduate with my Bachelor's in Cognitive Systems: Computational Intelligence & Design. 
+        My current interests lie in user research and data visualizations, in particular the intersection between the two: 
+        how to make data accesible and understandable to diverse audiences. I am currently a UX design intern at 
+        <a style='color: #486A61; text-decoration:none;'href=https://kindworks.ai>Kindworks.AI</a> assisting with UX 
+        architecture, engagement data, and social media content.
+      </p>
+    </div>
+  </div>
 
-            <div style="height: 10%">
+  <!-- First Slideshow -->
+<div class="slideshow-container">
+  <a class="prev" onclick="plusSlides(-1, 1)">&#10094;</a> <!-- Left arrow for the first slideshow -->
+  <div class="mySlides fade">
+    <img src="sprouts1.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="sprouts2.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="sprouts3.png" style="width:100%">
+  </div>
+  <a class="next" onclick="plusSlides(1, 1)">&#10095;</a> <!-- Right arrow for the first slideshow -->
+</div>
 
-                <p style="color: whitesmoke">2023</p>
-            </div>
-          <div class="footer">
-           <span> <a href="https://www.linkedin.com/in/olivia-lam-b77354193/">LinkedIn</a>
-            <a href="https://www.youtube.com/channel/UCqU9DX8UAWD0-FT8qiIxsJQ">YouTube</a>
-            <a href="mailto:olivia.lam@alumni.ubc.ca">Email</a>
-        </span>   
-          </div>
 
+  <!-- Dots for First Slideshow -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1, 1)"></span>
+    <span class="dot" onclick="currentSlide(2, 1)"></span>
+    <span class="dot" onclick="currentSlide(3, 1)"></span>
+  </div>
 
+  <!-- Text for First Slideshow -->
+  <div><p style="text-align:left; padding: 20px; margin-left: 80px; line-height:1.5">
+    <b style='font-size:larger; color:#50b8e7'>UBC Sprouts Scheduler</b> is a project involving AB testing of new user interfaces aimed at lightening cognitive load on UBC Sprouts volunteers. <br><br><b style='font-size:larger;'>Research methods used:</b> Thematic Analysis, Statistical Analysis, In-person Interviews, Persona Mapping, Cognitive Walkthroughs, Usability Testing
+  </p></div>
+
+  <!-- Second Slideshow -->
+<div class="slideshow-container">
+  <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a> <!-- Left arrow for the second slideshow -->
+  <div class="mySlides fade">
+    <img src="fish1.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="fish2.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="fish3.png" style="width:100%">
+  </div>
+  <a class="next" onclick="plusSlides(1, 2)">&#10095;</a> <!-- Right arrow for the second slideshow -->
+</div>
+
+  <!-- Dots for Second Slideshow -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1, 2)"></span>
+    <span class="dot" onclick="currentSlide(2, 2)"></span>
+    <span class="dot" onclick="currentSlide(3, 2)"></span>
+  </div>
+
+  <!-- Text for Second Slideshow -->
+  <div><p style="text-align:left; padding: 20px; margin-left: 80px; line-height:1.5">
+    <b style='font-size:larger; color:#002F6C'>Fishers' Language Agnostic Communication Tool </b>researches designs for communities with high cultural variability and high levels of illiteracy. <br><br><b style='font-size:larger;'>Research methods used:</b> Affinity Diagrams, Online Interviews, Semiotics Analysis
+  </p></div>
+
+  <!-- Third Slideshow -->
+<div class="slideshow-container">
+  <a class="prev" onclick="plusSlides(-1, 3)">&#10094;</a> <!-- Left arrow for the third slideshow -->
+  <div class="mySlides fade">
+    <img src="gene1.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="gene2.png" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="gene3.png" style="width:100%">
+  </div>
+  <a class="next" onclick="plusSlides(1, 3)">&#10095;</a> <!-- Right arrow for the third slideshow -->
+</div>
+
+  <!-- Dots for Third Slideshow -->
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1, 3)"></span>
+    <span class="dot" onclick="currentSlide(2, 3)"></span>
+    <span class="dot" onclick="currentSlide(3, 3)"></span>
+  </div>
+
+    <!-- Text for Third Slideshow -->
+    <div><p style="text-align:left; padding: 20px; margin-left: 80px; line-height:1.5">
+      <b style='font-size:larger; color:#3E8241'>Gene Profiler</b> is an interface assisting biologists in targeting disease-correlated genes. Various forms of data visualization and statistical analyses were vital in the creation of the platform.
+      <br><br> <b style='font-size:larger;'>Research methods used:</b> Focus groups, Heuristic Evaluation, Cognitive Walkthrough
+    </p></div>
+
+  <!-- JavaScript for the slideshows goes here -->
+  <script>
+    let slideIndex = [1, 1, 1]; // One index for each slideshow
+    showSlides(slideIndex[0], 1);
+    showSlides(slideIndex[1], 2);
+    showSlides(slideIndex[2], 3);
+
+    function plusSlides(n, slideshowIndex) {
+      showSlides((slideIndex[slideshowIndex - 1] += n), slideshowIndex);
+    }
+
+    function currentSlide(n, slideshowIndex) {
+      showSlides((slideIndex[slideshowIndex - 1] = n), slideshowIndex);
+    }
+
+    function showSlides(n, slideshowIndex) {
+      let i;
+      let slides = document.getElementsByClassName("slideshow-container")[slideshowIndex - 1].getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {
+        slideIndex[slideshowIndex - 1] = 1;
+      }
+      if (n < 1) {
+        slideIndex[slideshowIndex - 1] = slides.length;
+      }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex[slideshowIndex - 1] - 1].style.display = "block";
+      dots[slideIndex[slideshowIndex - 1] - 1].className += " active";
+    }
+  </script>
 </body>
-
 </html>
